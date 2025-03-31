@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistem Perpustakaan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>📚 Sistem Manajemen Perpustakaan</h1>
+        
+        <div class="section">
+            <h2>Tambahkan Buku Baru</h2>
+            <div class="form-group">
+                <input type="text" id="bookTitle" placeholder="Judul Buku">
+                <input type="text" id="bookAuthor" placeholder="Penulis">
+                <button onclick="addBook()">Tambah Buku</button>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>Daftar Buku</h2>
+            <div id="bookList"></div>
+        </div>
+        
+        <div class="section">
+            <h2>Pinjam Buku</h2>
+            <div class="form-group">
+                <input type="text" id="memberName" placeholder="Nama Anggota">
+                <select id="bookSelect"></select>
+                <button onclick="borrowBook()">Pinjam Buku</button>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>Buku yang Dipinjam</h2>
+            <div id="borrowedBooks"></div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
